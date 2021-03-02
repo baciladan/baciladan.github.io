@@ -5,9 +5,13 @@ function handleResponse(response) {
     if (response.status >= 200 && response.status <= 299) {
         return response.text();
     } else {
-        return 'Oops, something went wrong with the API';
+        throw 'Oops, something went wrong with the API';
     }
 
+}
+
+function showError(message) {
+    responseContainer.append(message);
 }
 
 function showResponse(parsedResponse) {
@@ -19,6 +23,7 @@ function sendrequest(url) {
     fetch(url, { method: 'GET' })
         .then(handleResponse)
         .then(showResponse)
+        .catch(showError)
 }
 
 window.addEventListener('DOMContentLoaded', function() {
