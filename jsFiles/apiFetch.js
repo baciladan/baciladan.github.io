@@ -1,4 +1,4 @@
-const baseUrl = 'http://numbersapi.com/8/22/date';
+const baseUrl = 'https://numbersapi.com/8/22/date';
 const responseContainer = document.getElementById('apiResponseContainer');
 
 function handleResponse(response) {
