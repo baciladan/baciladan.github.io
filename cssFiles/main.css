@@ -161,6 +161,7 @@ ul a {
 
 .orangeDetailStory {
     font-size: 3rem;
+    text-align: -webkit-center;
     color: var(--orangetint);
     display: inline-block;
     font-family: mainFont;
