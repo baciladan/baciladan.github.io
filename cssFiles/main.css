@@ -38,7 +38,7 @@ body {
     background-color: var(--background);
 }
 
-#contact-form {
+#contact-form * {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     border-radius: 0;
