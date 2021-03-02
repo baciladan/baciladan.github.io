@@ -38,10 +38,7 @@ body {
     background-color: var(--background);
 }
 
-input[type=text],
-input[type=submit],
-input[type=email],
-textarea {
+#contact-form {
     -webkit-appearance: none;
     -webkit-border-radius: 0;
     border-radius: 0;
