@@ -154,13 +154,13 @@ ul a {
 }
 
 .orangeDetail {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--orangetint);
     display: inline-block;
 }
 
 .orangeDetailStory {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: -webkit-center;
     color: var(--orangetint);
     display: inline-block;
