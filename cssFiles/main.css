@@ -267,8 +267,8 @@ ul a {
 }
 
 .cv a:hover {
-    padding: 3.5rem;
-    font-size: 5.5rem;
+    padding: 2.5rem;
+    font-size: 4rem;
     transition: 0.5s ease-in-out;
 }
 
