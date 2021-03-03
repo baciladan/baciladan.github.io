@@ -13,7 +13,7 @@
 
 <body>
     <div class="wrapperStory">
-        <nav>
+        <nav id='topOfPage'>
             <div class="burger">
                 <i class="fas fa-bars"></i>
             </div>
@@ -121,12 +121,12 @@
             </div>
         </div>
         <div class="apiInfo">
-            <p>Here's an <span class="orangeDetailStory">intresting fact</span> about the day I was born</p>
-            <p class="orangeDetailStory">22nd of August</p>
-            <p>Data offered by: <a href='http://numbersapi.com/#1' target="_blank"> Numbers API </a></p>
+            <p>Wonder how <span class="orangeDetailStory">bitcoin is doing?</span> Take a look</p>
+            <p>Data offered by: <a href='http://coindesk.com/price/bitcoin' target="_blank"> coindesk api </a></p>
             <div id="apiResponseContainer">
             </div>
         </div>
+        <a href='#topOfPage' id="toTopButton"><i class="fas fa-arrow-circle-up"></i></a>
     </div>
     <script src="./jsFiles/responsiveNav.js"></script>
     <script src="./jsFiles/apiFetch.js"></script>
