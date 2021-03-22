@@ -259,7 +259,7 @@
              * @type {*}
              */
             this.settings = $.extend({
-                maxTilt: $(this).is('[data-tilt-max]') ? $(this).data('tilt-max') : 10,
+                maxTilt: $(this).is('[data-tilt-max]') ? $(this).data('tilt-max') : 3,
                 perspective: $(this).is('[data-tilt-perspective]') ? $(this).data('tilt-perspective') : 300,
                 easing: $(this).is('[data-tilt-easing]') ? $(this).data('tilt-easing') : 'cubic-bezier(.03,.98,.52,.99)',
                 scale: $(this).is('[data-tilt-scale]') ? $(this).data('tilt-scale') : '1',

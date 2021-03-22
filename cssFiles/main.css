@@ -515,12 +515,13 @@ ul a {
     align-items: center;
     flex-grow: 1;
     font-size: 1.5rem;
+    margin-top: 2rem;
 }
 
 .projectCard {
     display: flex;
     width: 100%;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
 }
 
 .leftPart {
@@ -553,11 +554,18 @@ ul a {
 
 .rightPart i {
     font-size: 4rem;
+    transition: 0.3s;
 }
 
 .rightPart a {
     text-decoration: none;
     color: white;
+}
+
+.rightPart i:hover {
+    font-size: 4.5rem;
+    text-shadow: 3px 3px black;
+    transition: 0.3s;
 }
 
 
