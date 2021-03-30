@@ -204,6 +204,7 @@ ul a {
 .social a {
     text-decoration: none;
     color: white;
+    transition: color 1s;
 }
 
 .social a:hover {
@@ -515,7 +516,7 @@ ul a {
     align-items: center;
     flex-grow: 1;
     font-size: 1.5rem;
-    margin-top: 2rem;
+    margin: 2rem auto;
 }
 
 .projectCard {
@@ -571,6 +572,26 @@ ul a {
 
 /* Media Queries */
 
+@media screen and (max-width: 1140px) {
+    .projectCard {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        width: 90%;
+        word-wrap: break-word;
+    }
+    .leftPart {
+        width: 65%;
+        border-radius: 15px 15px 0 0;
+    }
+    .rightPart {
+        width: 65%;
+        border-radius: 0 0 15px 15px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .wrapper {
         padding: 1.5rem;
@@ -583,21 +604,6 @@ ul a {
     }
     #contact-form {
         width: 75vw;
-    }
-    .projectCard {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-    .leftPart {
-        width: 65%;
-        border-radius: 15px 15px 0 0;
-    }
-    .rightPart {
-        width: 65%;
-        border-radius: 0 0 15px 15px;
     }
 }
 
