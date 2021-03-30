@@ -204,7 +204,7 @@ ul a {
 .social a {
     text-decoration: none;
     color: white;
-    transition: color 1s;
+    transition: 1s;
 }
 
 .social a:hover {
