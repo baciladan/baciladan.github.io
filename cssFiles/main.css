@@ -373,7 +373,7 @@ ul a {
 /* Contact Page Stiling */
 
 .formControl {
-    margin-top: 5rem;
+    margin-top: 12rem;
     flex-grow: 1;
 }
 
@@ -388,8 +388,7 @@ ul a {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 35rem;
-    width: 35vw;
+    width: 55vw;
     margin: 2.5rem auto;
 }
 
@@ -412,6 +411,7 @@ ul a {
     border: 0.25rem solid var(--orangetint);
     box-shadow: 1rem 1rem var(--orangetint);
     transition: 0.5s;
+    margin: 2rem 0;
 }
 
 #contact-form *:focus {
@@ -462,10 +462,12 @@ ul a {
 
 .illustration-active {
     display: block;
+    margin-top: 2.5rem;
 }
 
 .error-active {
     display: block;
+    margin-top: 2.5rem;
 }
 
 #exclamationpoint {
@@ -525,6 +527,10 @@ ul a {
     margin: 2.5rem 0;
 }
 
+.projectCard h3{
+    line-height: 1.3;
+}
+
 .leftPart {
     width: 30%;
     background-color: white;
@@ -569,16 +575,21 @@ ul a {
     transition: 0.3s;
 }
 
-
 /* Media Queries */
+
+@media screen and (min-width: 2100px){
+    #contact-form{
+        width: 25vw;
+    }
+}
 
 @media screen and (max-width: 1140px) {
     .projectCard {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 1.5rem;
-        margin-bottom: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
         width: 90%;
         word-wrap: break-word;
     }
@@ -589,6 +600,9 @@ ul a {
     .rightPart {
         width: 65%;
         border-radius: 0 0 15px 15px;
+    }
+    .projectCard h3{
+        line-height: 1.5;
     }
 }
 
@@ -628,6 +642,9 @@ ul a {
     nav li {
         margin: 10px 0;
         margin: 0 auto;
+    }
+    .formControl{
+        margin-top: 10rem;
     }
     svg {
         max-width: 100vw;
