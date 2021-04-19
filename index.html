@@ -1,55 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bacila Dan - Home</title>
-    <link rel="stylesheet" href="./cssFiles/main.css">
-    <script src="https://kit.fontawesome.com/ded9ec9fb9.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="./resources/favicon.ico">
-</head>
+    <link rel="stylesheet" href="./cssFiles/main.css" />
+    <script
+      src="https://kit.fontawesome.com/ded9ec9fb9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./resources/favicon.ico"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="wrapper">
-        <nav>
-            <div class="burger">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">home</a></li>
-                <li><a href="codingStory.html">about</a></li>
-                <li><a href="portfolio.html">portfolio</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-        <div class="showcase">
-            <p>
-                <span class="orangeDetail">{</span>hello There<span class="orangeDetail">}</span>, my name is
-            </p>
-            <p class="orangeDetail">
-                &lt;Băcilă Dan/&gt;
-            </p>
-            <p>
-                I live in Cluj Napoca, Romania and I am passionate about
-                <br/>
-                <span class="orangeDetail">(</span>web development<span class="orangeDetail">).</span>
-            </p>
-            <div id="typing">
-
-            </div>
+      <nav>
+        <div class="burger">
+          <i class="fas fa-bars"></i>
         </div>
-        <div class="harta">
-            <div class="social">
-                <a href="https://github.com/baciladan" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/dan-b%C4%83cil%C4%83-a6434416a/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="mailto:baciladan0@gmail.com" target="_blank"><i class="fas fa-inbox"></i></a>
-            </div>
+        <ul class="nav-links">
+          <li><a href="index.html">home</a></li>
+          <li><a href="codingStory.html">about</a></li>
+          <li><a href="portfolio.html">portfolio</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <li>
+            <button id="lightModeSwitch">
+              <span id="info-theme">Light Theme</span>
+              <i class="fas fa-adjust"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="showcase">
+        <p>
+          <span class="orangeDetail">{</span>hello There<span
+            class="orangeDetail"
+            >}</span
+          >, my name is
+        </p>
+        <p class="orangeDetail">&lt;Băcilă Dan/&gt;</p>
+        <p>
+          I live in Cluj Napoca, Romania and I am passionate about
+          <br />
+          <span class="orangeDetail">(</span>web development<span
+            class="orangeDetail"
+            >).</span
+          >
+        </p>
+        <div id="typing"></div>
+      </div>
+      <div class="harta">
+        <div class="social">
+          <a href="https://github.com/baciladan" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/dan-b%C4%83cil%C4%83-a6434416a/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a href="mailto:baciladan0@gmail.com" target="_blank"
+            ><i class="fas fa-inbox"></i
+          ></a>
         </div>
+      </div>
     </div>
     <script src="./jsFiles/app.js"></script>
     <script src="./jsFiles/responsiveNav.js"></script>
-</body>
-
+    <script src="./jsFiles/lightMode.js"></script>
+  </body>
 </html>
