@@ -558,10 +558,6 @@ ul a {
   color: #b73100;
 }
 
-.nav-active {
-  max-height: 500px;
-}
-
 @keyframes error {
   0% {
     transform: translateY(0);
@@ -683,6 +679,10 @@ ul a {
   }
 }
 
+.nav-active {
+  height: 400px;
+}
+
 @media screen and (max-width: 1024px) {
   .wrapper {
     padding: 1.5rem;
@@ -709,9 +709,9 @@ ul a {
   }
   nav ul {
     flex-direction: column;
-    max-height: 0px;
+    height: 0px;
+    transition: 0.5s ease-in-out;
     overflow: hidden;
-    transition: max-height 0.5s ease-in-out;
   }
   nav li {
     margin: 15px 0;
