@@ -114,6 +114,74 @@ body {
   border-radius: 0.35rem;
 }
 
+.rotateRight {
+  animation: rotateSwitchRight 0.3s linear;
+  -webkit-animation: rotateSwitchRight 0.3s linear;
+  -moz-animation: rotateSwitchRight 0.3s linear;
+  animation-fill-mode: forwards;
+}
+
+.rotateLeft {
+  animation: rotateSwitchLeft 0.3s linear;
+  -webkit-animation: rotateSwitchLeft 0.3s linear;
+  -moz-animation: rotateSwitchLeft 0.3s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotateSwitchRight {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotateSwitchLeft {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(-0deg);
+  }
+}
+
+@-moz-keyframes rotateSwitchRight {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(180deg);
+  }
+}
+
+@-moz-keyframes rotateSwitchLeft {
+  0% {
+    -moz-transform: rotate(180deg);
+  }
+  100% {
+    -moz-transform: rotate(-0deg);
+  }
+}
+
+@-webkit-keyframes rotateSwitchRight {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes rotateSwitchLeft {
+  0% {
+    -webkit-transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(-0deg);
+  }
+}
+
 /* NavBar */
 
 nav {
@@ -279,13 +347,10 @@ ul a {
   padding: 2rem;
   border-radius: 50%;
   border: 0.25rem solid var(--floralWhite);
-  transition: 0.5s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-
 .cv a:hover {
-  padding: 2.5rem;
-  font-size: 4rem;
-  transition: 0.5s ease-in-out;
+  color: var(--background);
 }
 
 .tech {
@@ -494,7 +559,7 @@ ul a {
 }
 
 .nav-active {
-  height: 350px;
+  max-height: 500px;
 }
 
 @keyframes error {
@@ -644,9 +709,9 @@ ul a {
   }
   nav ul {
     flex-direction: column;
-    height: 0px;
+    max-height: 0px;
     overflow: hidden;
-    transition: height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
   }
   nav li {
     margin: 15px 0;
