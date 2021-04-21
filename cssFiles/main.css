@@ -341,16 +341,16 @@ ul a {
 .cv a {
   text-decoration: none;
   color: var(--floralWhite);
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-top: 2.5rem;
   background-color: var(--orangetint);
-  padding: 2rem;
-  border-radius: 50%;
-  border: 0.25rem solid var(--floralWhite);
-  transition: 0.3s ease-in-out;
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  border: 0.15rem solid var(--floralWhite);
+  transition: 0.2s ease-in-out;
 }
 .cv a:hover {
-  color: var(--background);
+  box-shadow: 6px 6px var(--orangetint);
 }
 
 .tech {
