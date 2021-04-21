@@ -1,701 +1,685 @@
 /* Global Font Face Used For Titles */
 
 @font-face {
-    font-family: mainFont;
-    src: url(../resources/MajorMonoDisplay-Regular.ttf);
+  font-family: mainFont;
+  src: url(../resources/MajorMonoDisplay-Regular.ttf);
 }
-
 
 /* Global Font Face Used For Text (Paragraphs) */
 
 @font-face {
-    font-family: roboto;
-    src: url(../resources/Roboto-Regular.ttf);
+  font-family: roboto;
+  src: url(../resources/Roboto-Regular.ttf);
 }
-
 
 /* Colors Used Declared as CSS Variables */
 
 :root {
-    --mainColor: #63c132;
-    --background: #342e37;
-    --orangetint: #ff5714;
-    --floralWhite: #fffcf2;
+  --mainColor: #63c132;
+  --background: #342e37;
+  --orangetint: #ff5714;
+  --floralWhite: #fffcf2;
 }
 
 .lightMode {
-    --background: #fffcf2;
-    --floralWhite: #342e37;
+  --background: #fffcf2;
+  --floralWhite: #342e37;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-
 /* Smooth Scrolling Troughout the Page */
-
 
 /* Reset All Margin And Paddings */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: var(--background);
+  background-color: var(--background);
 }
 
 #contact-form * {
-    -webkit-appearance: none;
-    -webkit-border-radius: 0;
-    border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
 }
-
 
 /* Wrappers */
 
 .wrapper {
-    min-height: 100vh;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    font-family: roboto;
+  min-height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: roboto;
 }
 
 .wrapperStory {
-    min-height: 100vh;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    font-family: roboto;
-    background-color: var(--background);
-    color: var(--floralWhite);
-    text-align: center;
-    font-size: 2.5rem;
+  min-height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: roboto;
+  background-color: var(--background);
+  color: var(--floralWhite);
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .wrapperContact {
-    min-height: 100vh;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    font-family: mainFont;
-    background-color: var(--background);
-    color: var(--floralWhite);
-    text-align: center;
-    font-size: 2.5rem;
+  min-height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: mainFont;
+  background-color: var(--background);
+  color: var(--floralWhite);
+  text-align: center;
+  font-size: 2.5rem;
 }
 
 .wrapperPortfolio {
-    min-height: 100vh;
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    font-family: mainFont;
-    background-color: var(--background);
-    color: var(--floralWhite);
-    text-align: center;
-    font-size: 2.5rem;
+  min-height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: mainFont;
+  background-color: var(--background);
+  color: var(--floralWhite);
+  text-align: center;
+  font-size: 2.5rem;
 }
 
-
 /* NavBar Elements */
-
 
 /* Light Mode Dark Mode Toggle */
 
 #lightModeSwitch {
-    padding: 0.5rem;
-    font-size: 1rem;
-    color: var(--orangetint);
-    background-color: var(--background);
-    outline: none;
-    border: 3px solid var(--orangetint);
-    border-radius: 0.35rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--orangetint);
+  background-color: var(--background);
+  outline: none;
+  border: 3px solid var(--orangetint);
+  border-radius: 0.35rem;
 }
-
 
 /* NavBar */
 
 nav {
-    display: flex;
-    align-items: center;
-    min-height: 5rem;
-    font-family: mainFont;
-    font-weight: bold;
-    color: var(--orangetint);
+  display: flex;
+  align-items: center;
+  min-height: 5rem;
+  font-family: mainFont;
+  font-weight: bold;
+  color: var(--orangetint);
 }
 
 ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
 
 li {
-    text-align: center;
+  text-align: center;
 }
 
 ul a {
-    color: var(--orangetint);
-    text-decoration: none;
-    letter-spacing: 5px;
-    font-size: 1.5rem;
+  color: var(--orangetint);
+  text-decoration: none;
+  letter-spacing: 5px;
+  font-size: 1.5rem;
 }
 
 .burger {
-    display: none;
-    color: var(--orangetint);
-    text-align: center;
-    font-size: 2.5rem;
-    margin-top: 2.5rem;
-    cursor: pointer;
+  display: none;
+  color: var(--orangetint);
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  cursor: pointer;
 }
-
 
 /* Stiling Home Page */
 
 .showcase {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
-    line-height: 1.3;
-    background-color: var(--background);
-    color: var(--floralWhite);
-    font-size: 2.5rem;
-    font-weight: bold;
-    font-family: mainFont;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+  line-height: 1.3;
+  background-color: var(--background);
+  color: var(--floralWhite);
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: mainFont;
+  text-align: center;
 }
 
 .showcase p {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .orangeDetail {
-    font-size: 2.5rem;
-    color: var(--orangetint);
-    display: inline-block;
+  font-size: 2.5rem;
+  color: var(--orangetint);
+  display: inline-block;
 }
 
 .orangeDetailStory {
-    font-size: 2.5rem;
-    text-align: -webkit-center;
-    color: var(--orangetint);
-    display: inline-block;
-    font-family: mainFont;
+  font-size: 2.5rem;
+  text-align: -webkit-center;
+  color: var(--orangetint);
+  display: inline-block;
+  font-family: mainFont;
 }
 
 #typing {
-    margin-top: 3rem;
-    color: var(--orangetint);
-    padding: 0.5rem;
-    font-family: mainFont;
+  margin-top: 3rem;
+  color: var(--orangetint);
+  padding: 0.5rem;
+  font-family: mainFont;
 }
 
 #typing::after {
-    content: "";
-    border-right: 3px solid var(--orangetint);
-    animation: blinking 0.5s infinite ease;
+  content: "";
+  border-right: 3px solid var(--orangetint);
+  animation: blinking 0.5s infinite ease;
 }
 
 @keyframes blinking {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .social {
-    margin: 2rem 0;
-    font-size: 3rem;
-    font-weight: bold;
-    font-family: mainFont;
-    text-align: center;
+  margin: 2rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: mainFont;
+  text-align: center;
 }
 
 .social a {
-    text-decoration: none;
-    color: var(--floralWhite);
-    transition: 1s;
+  text-decoration: none;
+  color: var(--floralWhite);
+  transition: 1s;
 }
 
 .social a:hover {
-    color: var(--orangetint);
-    transition: color 1s;
+  color: var(--orangetint);
+  transition: color 1s;
 }
 
 .harta {
-    max-width: 1100px;
-    min-height: 30vh;
-    background-image: url("../resources/HartaRomaniei.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  max-width: 1100px;
+  min-height: 30vh;
+  background-image: url("../resources/HartaRomaniei.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 
 /* Story Page Stiling */
 
 .story {
-    font-size: 2rem;
-    color: var(--floralWhite);
-    text-align: center;
-    margin: 3rem auto;
+  font-size: 2rem;
+  color: var(--floralWhite);
+  text-align: center;
+  margin: 3rem auto;
 }
 
 .story p {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
-
 
 /* Programming Languages Stiling From Coding Story Page */
 
 .cv {
-    margin-top: 3.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: mainFont;
-    text-align: center;
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: mainFont;
+  text-align: center;
 }
 
 .cv a {
-    text-decoration: none;
-    color: var(--floralWhite);
-    font-size: 3rem;
-    margin-top: 2.5rem;
-    background-color: var(--orangetint);
-    padding: 1rem 2rem;
-    border-radius: 0.2rem;
-    border: 0.15rem solid var(--floralWhite);
-    transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: var(--floralWhite);
+  font-size: 3rem;
+  margin-top: 2.5rem;
+  background-color: var(--orangetint);
+  padding: 1rem 2rem;
+  border-radius: 0.2rem;
+  border: 0.15rem solid var(--floralWhite);
+  transition: 0.2s ease-in-out;
 }
 
 .cv a:hover {
-    box-shadow: 6px 6px var(--orangetint);
+  box-shadow: 6px 6px var(--orangetint);
 }
 
 .tech {
-    font-size: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+  font-size: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .language {
-    overflow: hidden;
-    height: 13rem;
-    width: 13rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 8.5rem;
-    margin: 1.5rem 1.5rem;
-    background-color: var(--orangetint);
-    border-radius: 50%;
-    transition: 1s;
-    border: 0.5rem solid var(--floralWhite);
+  overflow: hidden;
+  height: 13rem;
+  width: 13rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8.5rem;
+  margin: 1.5rem 1.5rem;
+  background-color: var(--orangetint);
+  border-radius: 50%;
+  transition: 1s;
+  border: 0.5rem solid var(--floralWhite);
 }
 
 .language:hover {
-    color: var(--orangetint);
-    background-color: var(--floralWhite);
-    border: 0.5rem solid var(--orangetint);
-    transition: 1s;
+  color: var(--orangetint);
+  background-color: var(--floralWhite);
+  border: 0.5rem solid var(--orangetint);
+  transition: 1s;
 }
-
 
 /* Soft Skills Side Stiling */
 
 .softSkill {
-    width: 15rem;
-    height: 25rem;
-    display: flex;
-    margin: 1rem 1.5rem;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 15rem;
+  height: 25rem;
+  display: flex;
+  margin: 1rem 1.5rem;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .apiInfo {
-    line-height: 1.5;
-    font-size: 2rem;
-    text-align: center;
+  line-height: 1.5;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .apiInfo a {
-    text-decoration: none;
-    color: var(--orangetint);
-    font-family: mainFont;
+  text-decoration: none;
+  color: var(--orangetint);
+  font-family: mainFont;
 }
 
 #apiResponseContainer {
-    font-family: mainFont;
-    font-size: 1.5rem;
-    line-height: 2;
-    max-width: 65%;
-    margin: 1.5rem auto;
-    font-weight: 650;
+  font-family: mainFont;
+  font-size: 1.5rem;
+  line-height: 2;
+  max-width: 65%;
+  margin: 1.5rem auto;
+  font-weight: 650;
 }
 
 #apiResponseContainer div {
-    border-bottom: 0.25rem solid var(--orangetint);
-    border-width: 25%;
-    margin: 3rem auto;
-    padding: 1.5rem;
-    max-width: 60%;
-    text-align: center;
+  border-bottom: 0.25rem solid var(--orangetint);
+  border-width: 25%;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  max-width: 60%;
+  text-align: center;
 }
 
 #apiResponseContainer div p {
-    color: var(--orangetint);
-    font-weight: bold;
+  color: var(--orangetint);
+  font-weight: bold;
 }
 
 #toTopButton {
-    text-transform: uppercase;
-    color: var(--floralWhite);
-    font-size: 4rem;
-    text-decoration: none;
-    margin: 1.5rem auto;
-    transition: 0.5s linear;
+  text-transform: uppercase;
+  color: var(--floralWhite);
+  font-size: 4rem;
+  text-decoration: none;
+  margin: 1.5rem auto;
+  transition: 0.5s linear;
 }
 
 #toTopButton:hover {
-    color: var(--orangetint);
-    transform: scale(1.5);
-    transition: 0.5s linear;
+  color: var(--orangetint);
+  transform: scale(1.5);
+  transition: 0.5s linear;
 }
-
 
 /* Contact Page Stiling */
 
 .formControl {
-    margin-top: 12rem;
-    flex-grow: 1;
+  margin-top: 12rem;
+  flex-grow: 1;
 }
 
 ::placeholder {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: var(--orangetint);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--orangetint);
 }
 
 #contact-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 55vw;
-    margin: 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 55vw;
+  margin: 2.5rem auto;
 }
 
 #contact-form * {
-    /* Remove default stiling for form elements */
-    border: none;
-    outline: none;
-    background-image: none;
-    background-color: transparent;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    width: 100%;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 2.5rem;
-    background-color: var(--floralWhite);
-    color: var(--orangetint);
-    font-family: mainFont;
-    border: 0.25rem solid var(--orangetint);
-    /* box-shadow: 1rem 1rem var(--orangetint); */
-    transition: 0.5s;
-    margin: 2rem 0;
+  /* Remove default stiling for form elements */
+  border: none;
+  outline: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 2.5rem;
+  background-color: var(--floralWhite);
+  color: var(--orangetint);
+  font-family: mainFont;
+  border: 0.25rem solid var(--orangetint);
+  /* box-shadow: 1rem 1rem var(--orangetint); */
+  transition: 0.5s;
+  margin: 2rem 0;
 }
 
 #contact-form *:focus {
-    background-color: var(--orangetint);
-    /* box-shadow: 1rem 1rem var(--floralWhite); */
-    border: 0.25rem solid var(--floralWhite);
-    color: var(--floralWhite);
-    transition: 0.5s;
+  background-color: var(--orangetint);
+  /* box-shadow: 1rem 1rem var(--floralWhite); */
+  border: 0.25rem solid var(--floralWhite);
+  color: var(--floralWhite);
+  transition: 0.5s;
 }
 
 #subButton {
-    background-color: var(--orangetint);
-    /* box-shadow: 1rem 1rem var(--floralWhite); */
-    color: var(--floralWhite);
-    border: 0.25rem solid var(--floralWhite);
-    font-weight: bold;
-    font-size: 2rem;
+  background-color: var(--orangetint);
+  /* box-shadow: 1rem 1rem var(--floralWhite); */
+  color: var(--floralWhite);
+  border: 0.25rem solid var(--floralWhite);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 #subButton:hover {
-    background-color: var(--floralWhite);
-    /* box-shadow: 1rem 1rem var(--orangetint); */
-    color: var(--orangetint);
-    transition: 0.5s;
-    border: 0.25rem solid var(--orangetint);
+  background-color: var(--floralWhite);
+  /* box-shadow: 1rem 1rem var(--orangetint); */
+  color: var(--orangetint);
+  transition: 0.5s;
+  border: 0.25rem solid var(--orangetint);
 }
 
 #contact-form textarea {
-    display: block;
-    resize: none;
-    max-height: 290px;
+  display: block;
+  resize: none;
+  max-height: 290px;
 }
-
 
 /* Contact Page SVG Animations */
 
 .illustration {
-    display: none;
+  display: none;
 }
 
 .errorIlustration {
-    display: none;
+  display: none;
 }
 
 #sentindicator {
-    animation: messagesent 1s ease-in-out;
-    animation-iteration-count: 3;
+  animation: messagesent 1s ease-in-out;
+  animation-iteration-count: 3;
 }
 
 .illustration-active {
-    display: block;
-    margin-top: 2.5rem;
+  display: block;
+  margin-top: 2.5rem;
 }
 
 .error-active {
-    display: block;
-    margin-top: 2.5rem;
+  display: block;
+  margin-top: 2.5rem;
 }
 
 #exclamationpoint {
-    animation: error 1.5s ease-in-out;
-    transform-origin: center;
-    animation-iteration-count: 2;
+  animation: error 1.5s ease-in-out;
+  transform-origin: center;
+  animation-iteration-count: 2;
 }
 
 #errortext {
-    color: #b73100;
+  color: #b73100;
 }
 
 @keyframes error {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(45px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(45px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes messagesent {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-100px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
 
 /* Stiling of Portfolio Page */
 
 .wrapperProjects {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    flex-grow: 1;
-    font-size: 1.5rem;
-    margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  margin: 2rem auto;
 }
 
 .projectCard {
-    display: flex;
-    width: 100%;
-    margin: 2.5rem 0;
+  display: flex;
+  width: 100%;
+  margin: 2.5rem 0;
 }
 
 .projectCard h3 {
-    line-height: 1.3;
+  line-height: 1.3;
 }
 
 .leftPart {
-    width: 30%;
-    background-color: var(--floralWhite);
-    padding: 1.5rem;
-    border-radius: 15px 0 0 15px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+  width: 30%;
+  background-color: var(--floralWhite);
+  padding: 1.5rem;
+  border-radius: 15px 0 0 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .rightPart {
-    width: 70%;
-    text-align: center;
-    background-color: var(--orangetint);
-    color: var(--floralWhite);
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    font-family: roboto;
-    justify-content: center;
-    align-items: center;
-    padding: 1.5rem;
-    line-height: 3rem;
-    border-radius: 0px 15px 15px 0;
+  width: 70%;
+  text-align: center;
+  background-color: var(--orangetint);
+  color: var(--floralWhite);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  font-family: roboto;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  line-height: 3rem;
+  border-radius: 0px 15px 15px 0;
 }
 
 .rightPart i {
-    font-size: 4rem;
-    transition: 0.3s;
+  font-size: 4rem;
+  transition: 0.3s;
 }
 
 .rightPart a {
-    text-decoration: none;
-    color: var(--floralWhite);
+  text-decoration: none;
+  color: var(--floralWhite);
 }
 
 .rightPart i:hover {
-    font-size: 4.5rem;
-    text-shadow: 3px 3px black;
-    transition: 0.3s;
+  font-size: 4.5rem;
+  text-shadow: 3px 3px black;
+  transition: 0.3s;
 }
-
 
 /* Media Queries */
 
 @media screen and (min-width: 2100px) {
-    #contact-form {
-        width: 25vw;
-    }
+  #contact-form {
+    width: 25vw;
+  }
 }
 
 @media screen and (max-width: 1140px) {
-    .projectCard {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        width: 90%;
-        word-wrap: break-word;
-    }
-    .leftPart {
-        width: 65%;
-        border-radius: 15px 15px 0 0;
-    }
-    .rightPart {
-        width: 65%;
-        border-radius: 0 0 15px 15px;
-    }
-    .projectCard h3 {
-        line-height: 1.5;
-    }
+  .projectCard {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 90%;
+    word-wrap: break-word;
+  }
+  .leftPart {
+    width: 65%;
+    border-radius: 15px 15px 0 0;
+  }
+  .rightPart {
+    width: 65%;
+    border-radius: 0 0 15px 15px;
+  }
+  .projectCard h3 {
+    line-height: 1.5;
+  }
 }
 
 .nav-active {
-    height: 400px;
+  height: 400px;
 }
 
 @media screen and (max-width: 1024px) {
-    .wrapper {
-        padding: 1.5rem;
-    }
-    .wrapperContact {
-        padding: 1.5rem;
-    }
-    .wrapperStory {
-        padding: 1.5rem;
-    }
-    #contact-form {
-        width: 75vw;
-    }
+  .wrapper {
+    padding: 1.5rem;
+  }
+  .wrapperContact {
+    padding: 1.5rem;
+  }
+  .wrapperStory {
+    padding: 1.5rem;
+  }
+  #contact-form {
+    width: 75vw;
+  }
 }
 
 @media screen and (max-width: 905px) {
-    .burger {
-        display: block;
-    }
-    nav {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-    nav ul {
-        flex-direction: column;
-        height: 0px;
-        transition: 0.5s ease-in-out;
-        overflow: hidden;
-    }
-    nav li {
-        margin: 15px 0;
-    }
+  .burger {
+    display: block;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  nav ul {
+    flex-direction: column;
+    height: 0px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+  }
+  nav li {
+    margin: 15px 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-    .formControl {
-        margin-top: 10rem;
-    }
-    svg {
-        max-width: 100vw;
-    }
-    #apiResponseContainer div {
-        max-width: 85%;
-    }
+  body {
+    overflow-x: hidden;
+  }
+  .formControl {
+    margin-top: 10rem;
+  }
+  svg {
+    max-width: 100vw;
+  }
+  #apiResponseContainer div {
+    max-width: 85%;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    html {
-        font-size: 10px;
-    }
-    #contact-form {
-        width: 80vw;
-    }
-    .harta {
-        min-height: 50vh;
-    }
-    .orangeDetailStory {
-        font-size: 3rem;
-    }
-    #apiResponseContainer div {
-        max-width: 90%;
-    }
+  html {
+    font-size: 10px;
+  }
+  #contact-form {
+    width: 80vw;
+  }
+  .harta {
+    min-height: 50vh;
+  }
+  .orangeDetailStory {
+    font-size: 3rem;
+  }
+  #apiResponseContainer div {
+    max-width: 90%;
+  }
 }
