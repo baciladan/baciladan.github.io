@@ -600,11 +600,11 @@ ul a {
     word-wrap: break-word;
   }
   .leftPart {
-    width: 65%;
+    width: 90%;
     border-radius: 15px 15px 0 0;
   }
   .rightPart {
-    width: 65%;
+    width: 90%;
     border-radius: 0 0 15px 15px;
   }
   .projectCard h3 {
