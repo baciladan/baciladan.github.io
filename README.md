@@ -1,4 +1,4 @@
 # portfolio
 
 
-https://baciladan.github.io/portfolio
+https://baciladan.com
