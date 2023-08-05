@@ -1,3 +1,7 @@
+/*
+ *    Copyright ©️ [ / ] Studios 2023
+ */
+
 import { Github, Linkedin } from "react-bootstrap-icons";
 import "./App.css";
 import { ReactComponent as RoundLogo } from "./assets/Blank Space Logo (Round).svg";
@@ -15,16 +19,27 @@ function App() {
           { relativeUrl: "#projects", label: "Projects" },
         ]}
         additionalCTAs={[
-          { icon: <Github size={24} />, relativeUrl: "/github" },
-          { icon: <Linkedin size={22} />, relativeUrl: "/linkedin" },
+          {
+            icon: <Github size={24} />,
+            absoluteUrl: "https://github.com/baciladan",
+          },
+          {
+            icon: <Linkedin size={22} />,
+            absoluteUrl: "https://www.linkedin.com/in/dan-bacila/",
+          },
         ]}
       />
-      <main style={{ height: "110vh" }}></main>
       <Footer
         copyrightText="Copyright &copy; [ / ] Studios | 2023"
         additionalCTAs={[
-          { label: "GitHub", relativeUrl: "/" },
-          { label: "LinkedIn", relativeUrl: "/" },
+          {
+            icon: <Github size={24} />,
+            absoluteUrl: "https://github.com/baciladan",
+          },
+          {
+            icon: <Linkedin size={22} />,
+            absoluteUrl: "https://www.linkedin.com/in/dan-bacila/",
+          },
         ]}
       />
     </>

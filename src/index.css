@@ -1,4 +1,20 @@
-/* General styles */
+/* Variables */
+:root {
+  /* Main colors */
+  --background-primary-100: #212529;
+  --background-secondary-100: #343a40;
+  --background-tertiary-100: #495057;
+  --white-accent: #f8f4f9;
+  --white-accent-80: #f8f4f980;
+
+  /* Fonts */
+  --base-font: "Roboto";
+}
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
 body {
-  background-color: #212529;
+  background-color: var(--background-primary-100);
 }

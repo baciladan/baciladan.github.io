@@ -2,6 +2,7 @@
  *    Copyright ©️ [ / ] Studios 2023
  */
 
+import { v4 as uuidv4 } from "uuid";
 import "./Footer.css";
 
 export const Footer = ({ copyrightText = "", additionalCTAs = [] }: Props) => {
@@ -10,13 +11,14 @@ export const Footer = ({ copyrightText = "", additionalCTAs = [] }: Props) => {
       <div className="copyright-text">{copyrightText}</div>
       <div className="footer-ctas">
         <ul className="footer-ctas-container">
-          {additionalCTAs.map((additionalCTA) => (
+          {additionalCTAs.map(({ absoluteUrl, icon }) => (
             <a
               className="footer-cta-link"
-              href={additionalCTA.relativeUrl}
+              href={absoluteUrl}
               target="_blank"
+              key={uuidv4()}
             >
-              {additionalCTA.label}
+              {icon}
             </a>
           ))}
         </ul>
@@ -28,7 +30,7 @@ export const Footer = ({ copyrightText = "", additionalCTAs = [] }: Props) => {
 type Props = {
   copyrightText: string;
   additionalCTAs?: {
-    label: string;
-    relativeUrl: string;
+    icon: JSX.Element;
+    absoluteUrl: string;
   }[];
 };
