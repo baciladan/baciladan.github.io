@@ -6,6 +6,7 @@ import { Github, Linkedin } from "react-bootstrap-icons";
 import "./App.css";
 import { ReactComponent as RoundLogo } from "./assets/Blank Space Logo (Round).svg";
 import { Navbar } from "./components/Navbar/Navbar";
+import { CodeEditor } from "./components/CodeEditor/CodeEditor";
 import { Footer } from "./components/Footer/Footer";
 
 function App() {
@@ -29,6 +30,16 @@ function App() {
           },
         ]}
       />
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "calc(100vh - 180px)",
+        }}
+      >
+        <CodeEditor />
+      </div>
       <Footer
         copyrightText="Copyright &copy; [ / ] Studios | 2023"
         additionalCTAs={[

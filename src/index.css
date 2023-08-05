@@ -4,8 +4,14 @@
   --background-primary-100: #212529;
   --background-secondary-100: #343a40;
   --background-tertiary-100: #495057;
+  --background-light-gray: #6c757d;
   --white-accent: #f8f4f9;
   --white-accent-80: #f8f4f980;
+
+  /* Action colors */
+  --action-red: #e03c32;
+  --action-yellow: #ffd301;
+  --action-green: #7bb662;
 
   /* Fonts */
   --base-font: "Roboto";
