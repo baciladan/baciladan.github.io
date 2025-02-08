@@ -1,4 +1,0 @@
-# portfolio
-
-
-https://baciladan.com
