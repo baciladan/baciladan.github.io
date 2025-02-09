@@ -9,7 +9,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "pnpm run build",
+    "add-domain": "echo baciladan.com > dist/CNAME",
+    "predeploy": "pnpm run build && pnpm run add-domain",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
